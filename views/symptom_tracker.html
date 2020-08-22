@@ -1,0 +1,82 @@
+<html>
+  <head> <link rel ="stylesheet" type = "text/css" href ="../css/views.css" > 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /></head>
+<body>
+  <main>
+  <div class="card padded" >
+      <div class="header">
+        <h1 class="logo">GoCo</h1>
+        <h2>What are your symptoms today?</h2>
+        </div>
+      <div class="container"> </br> 
+          <input type = "checkbox" id ="cough" name="cough" value ="Cough" onclick="showhide('coughmenu')">
+          <label for = "cough"><b> Are you coughing ? </b></label> </br>
+
+          <div    id ="coughmenu" style ="display:none;margin-left: 16px;">  
+            <p>Tell us more</p> </br>
+            
+            <p> How Frequent is it? </p>
+            <input type = radio id ="cough1" value ="Less than 5 times an hour" name="coughfreq" checked ="checked">
+              <label for = "cough1">Less than 5 times an hour</label> </br>
+              <input type = radio id ="cough2" value ="5 to 15 times an hour" name="coughfreq">
+              <label for = "cough2">5 to 15 times an hour</label> </br>
+              <input type = radio id ="cough3" value ="More than 15 times per hour" name="coughfreq">
+              <label for = "cough3">More than 15 times per hour</label> </br>
+          </br>
+              <p> Cough Type: </p>
+              <input type = radio id ="cough4" value ="Dry" name="coughtype" checked ="checked">
+              <label for = "cough4">Dry</label> </br>
+              <input type = radio id ="cough5" value ="With Flum" name="coughtype">
+              <label for = "cough5">With Flum</label> </br>
+              </div>
+            </br>
+
+          <input type = "checkbox" id ="breathing" name="breathing" value ="breathing" onclick="showhide('breathemenu')">
+          <label for = "breathing"> <b> Any difficulty in breathing? </b></label> </br>
+          </br>
+          
+          <div class="slidecontainer" id="breathemenu" style ="display:none;margin-left: 16px;" >
+            <p> How Severe is it? </p>
+            <input type="range" min="1" max="10" value="1" class="slider" id="breathingrange"> </br>
+            <p>Sevrity: <span id="demo"></span></p> </br> 
+          </div>
+
+          <input type = "checkbox" id ="fever" name="fever" value ="fever" onclick="showhide('fevermenu')">
+          <label for = "fever"><b>Do you have a fever? </b></label> </br>
+          <div    id ="fevermenu" style ="display:none;margin-left: 16px;">
+          <label for = "temp">Temperature in Celcius</label> </br>
+          <input type = "text" id ="temp" name="temp" placeholder ="Enter Temperature">
+           </br>
+          </div>
+        </br>
+          <input type = "checkbox" id ="chestpain" name="chestpain" value ="chestpain" onclick="showhide('chestmenu')">
+          <label for = "chestpain"><b> How is your Heart?</b></label> </br>
+          <div    id ="chestmenu" style ="display:none;margin-left: 16px;">
+           <p> Severity of Chest Pain: </p>
+          <input type = radio id ="chest1" value ="Mild" name="chesttype" checked = "checked ">
+              <label for = "chest1">Mild</label> 
+              <input type = radio id ="chest2" value ="Moderate"name="chesttype">
+              <label for = "chest2">Moderate</label> 
+              <input type = radio id ="chest3" value ="Severe"name="chesttype">
+              <label for = "chest3">Severe</label> </br>
+          </div>
+        </br>
+          <input type = "checkbox" id ="digestion" name="digestion" value ="sore_throat">
+          <label for = "digestion"><b>I have a sore throat </b></label> </br> </br>
+      <button id="submit" class="button">Submit</button>
+      </div>
+      </div>
+  </div>
+  <div class="footer">
+    <p>© 2020 GOCO</p>
+  </div>
+</main>
+
+<script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+<script src = "../js/views.js"></script>
+</body>
+</html>

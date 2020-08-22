@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <title>Go Co</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="form-wrap">
+      <div class="tabs">
+        <h3 class="signup-tab">
+          <a class="active" href="#signup-tab-content">Sign Up</a>
+        </h3>
+        <h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
+      </div>
+      <!--.tabs-->
+
+      <div class="tabs-content">
+        <div id="signup-tab-content" class="active">
+          <form class="signup-form" id="signup-form" action="" method="post">
+            <input
+              type="email"
+              class="input"
+              id="user_email"
+              name="email"
+              autocomplete="off"
+              required="true"
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              class="input"
+              id="user_name"
+              name="user_name"
+              autocomplete="off"
+              required="true"
+              placeholder="Username"
+            />
+            <input
+              type="text"
+              class="input"
+              id="first_name"
+              name="first_name"
+              autocomplete="off"
+              required="true"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              class="input"
+              id="last_name"
+              name="last_name"
+              autocomplete="off"
+              required="true"
+              placeholder="Last Name"
+            />
+
+            <input
+              type="password"
+              class="input"
+              id="user_pass"
+              name="password"
+              autocomplete="off"
+              required="true"
+              placeholder="Password"
+            />
+            <input
+              type="number"
+              class="input"
+              id="phone_number"
+              name="phone_number"
+              autocomplete="off"
+              required="true"
+              placeholder="Mobile Number"
+            />
+            <label>Birthday:</label>
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
+              onchange="console.log(document.getElementById('birthday').value)"
+            />
+            <select id="gender" name="gender" required="true">
+              <option hidden disabled selected value> Gender </option>
+              <option value="male"> Male </option>
+              <option value="female"> Female </option>
+              <option value="other"> I'd rather not say </option>
+            </select>
+            <select id="country" name="country" required="true">
+              <option hidden disabled selected value> Country </option>
+            </select>
+            <input
+              type="text"
+              class="input"
+              id="state"
+              name="state"
+              autocomplete="off"
+              required="true"
+              placeholder="State"
+            />
+            <input
+              type="text"
+              class="input"
+              id="city"
+              name="city"
+              autocomplete="off"
+              required="true"
+              placeholder="City"
+            />
+
+            <input type="submit" class="button" value="Sign Up" />
+          </form>
+          <!--.login-form-->
+          <div class="help-text">
+            <p>By signing up, you agree to our</p>
+            <p><a href="#">Terms of service</a></p>
+          </div>
+          <!--.help-text-->
+        </div>
+        <!--.signup-tab-content-->
+
+        <div id="login-tab-content">
+          <form class="login-form" id="login-form" action="" method="post">
+            <input
+              type="text"
+              class="input"
+              id="user_login"
+              name="user_name"
+              autocomplete="off"
+              placeholder="Username"
+              required="true"
+            />
+            <input
+              type="password"
+              class="input"
+              id="user_pass"
+              name="password"
+              autocomplete="off"
+              placeholder="Password"
+              required="true"
+            />
+            <input type="checkbox" class="checkbox" id="remember_me" />
+            <label for="remember_me">Remember me</label>
+
+            <input type="submit" class="button" value="Login" />
+          </form>
+          <!--.login-form-->
+          <div class="help-text">
+            <p><a href="#">Forget your password?</a></p>
+          </div>
+          <!--.help-text-->
+        </div>
+        <!--.login-tab-content-->
+      </div>
+      <!--.tabs-content-->
+    </div>
+    <!--.form-wrap-->
+    <div class="footer">
+      <p>© 2020 GOCO</p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
